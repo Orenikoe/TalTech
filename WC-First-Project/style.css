@@ -1,0 +1,180 @@
+
+
+header {
+	height: 100px;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+ul a,  ul a:hover,ul a:focus,ul a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav {
+	width: 80%;
+	align-self: center;
+}
+
+nav ul {
+	display: flex;
+	place-content: space-between;
+}
+
+li {
+	list-style: none;
+	border: 2px solid black;
+	padding: 15px;
+	background-color: whitesmoke;
+}
+
+li:active {
+
+	background-color: salmon;
+	color: whitesmoke;
+}
+
+.hover {
+	background-color: salmon;
+	color: whitesmoke;
+}
+
+
+header h5 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+}
+
+.main-img-wrapper-left {
+	width: 100%;
+	padding: 50px;
+}
+
+
+.right{
+    text-align-last: end;
+    
+}
+
+.main-img {
+    box-shadow: 0 4px 2px -2px gray;
+    border: 1px solid gray;
+	width: 60%;
+	border-radius: 20px;
+	padding-left: 50px;
+}
+
+.right {
+    padding-right: 50px;
+
+}
+
+.main-text {
+	width: 100%;
+	padding: 50px;
+    font-family: cursive;
+    font-size: x-large;
+}
+
+.main-text p {
+    margin-bottom: 20px;
+}
+
+.team-member-img {
+	height: 230px;
+	width: 100%;
+	/* background-color: gray; */
+	border-radius: 50%;
+	
+	
+}
+
+.team-member-intro {
+    text-align-last: center;
+}
+
+.team-member-text {
+	text-align-last: start;
+}
+
+.team-container {
+	display: grid;
+	grid-template-rows: 300px 300ox 300px;
+	grid-template-columns: 300px 300px 300px;
+	place-content: space-evenly;
+    background-color: salmon;
+}
+
+.team-member-card {
+margin: 30px;
+display: flex;
+flex-direction: column;
+}
+
+header img {
+	height: 100%;
+	width: 9%;
+	padding: 5px;
+}
+
+.carousel .item {
+	height: 300px;
+}
+
+.item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+}
+
+.experience-container {
+	height: 500px;
+	background-color: papayawhip;
+	font-size: xx-large;
+	text-align: center;
+}
+.contact-container {
+	height: 500px;
+	background-color: salmon;
+	font-size: xx-large;
+	text-align: center;
+}
+
+.contact-field{
+	margin: 3px;
+	width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		height: 70px;
+	}
+
+	.carousel .item {
+		height: 200px;
+	}
+
+    .team-container {
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-columns: 300px;
+        place-content: space-evenly;
+        background-color: salmon;
+    }
+
+    .main-img {
+        width: 100%;
+        padding: 10px;
+    }
+
+	.right {
+		
+		padding-left: 40px;
+	}
+
+   
+}
